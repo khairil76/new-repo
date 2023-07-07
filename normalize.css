@@ -1,0 +1,349 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Dokumen
+   ========================================================================== */
+
+/**
+ * 1. Perbaiki line height (jarak antar paragraf) di semua peramban.
+ * 2. Hindari penyesuaian font size (ukuran fon) saat terjadi perubahan orientasi di iOS
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Bagian
+   ========================================================================== */
+
+/**
+ * Hilangkan margin di semua peramban.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render elemen `main` (utama) secara konsisten di IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Perbaiki ukuran fon dan margin di elemen `h1` di dalam konteks `section` dan
+ * `article` di Chrome, Firefox, dan Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Mengelompokkan konten
+   ========================================================================== */
+
+/**
+ * 1. Tambahkan box sizing (ukuran boks) yang sesuai di Firefox.
+ * 2. Tunjukkan overflow (luapan) di Edge dan IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Perbaiki turunan dan skala font size (ukuran fon) di semua peramban.
+ * 2. Perbaiki font size (ukuran fon) `em` yang ganjil di semua peramban.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Semantik tataran teks
+   ========================================================================== */
+
+/**
+ * Hilangkan latar belakang abu di tautan aktif di IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Hilangkan border bawah di Chrome 57-
+ * 2. Tambahkan text decoration (dekorasi teks) yang sesuai di Chrome, Edge, IE, Opera, dan Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Tambahkan font weight (ketebalan fon) yang sesuai di Chrome, Edge, dan Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Perbaiki turunan dan skala font size (ukuran fon) di semua peramban.
+ * 2. Perbaiki font size (ukuran fon) `em` yang ganjil di semua peramban.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Tambahkan font size (ukuran fon) yang sesuai di semua peramban.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Cegah elemen `sub` dan `sup` agar tidak memengaruhi line height (jarak antar paragraf) di
+ * semua peramban.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Konten tersemat
+   ========================================================================== */
+
+/**
+ * Hilangkan tepian di gambar yang ada di tautan di IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Formulir
+   ========================================================================== */
+
+/**
+ * 1. Ubah style fon di semua peramban.
+ * 2. Hilangkan margin di Firefox dan Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Tunjukkan overflow (luapan) di IE.
+ * 1. Tunjukkan overflow (luapan) di Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Hilangkan turunan text transform (kapitalisasi teks) di Edge, Firefox, dan IE.
+ * 1. Hilangkan turunan text transform (kapitalisasi teks) di Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Perbaiki kegagalan style di clickable type (tipe yang dapat diklik) di iOS dan Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Hilangkan border dalam dan padding di Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Pulihkan style fokus yang tidak diatur oleh kaidah sebelumnya.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Perbaiki padding di Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Perbaiki text wrapping (pembungkus teks) di Edge and IE.
+ * 2. Perbaiki turunan warna dari elemen `fieldset` di IE.
+ * 3. Hilangkan padding agar pengembang tidak terjebak saat menolkan
+ *    elemen `fieldset` di semua peramban.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Tambahkan perataan vertikal yang sesuai di Chrome, Firefox, dan Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ *  Hilangkan scrollbar vertikal default di IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Tambahkan box sizing (ukuran boks) yang sesuai di IE 10.
+ * 2. Hilangkan padding di IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Perbaiki style kursor pada tombol penambahan dan pengurangan di Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Perbaiki tampilan yang ganjil di Chrome dan Safari.
+ * 2. Perbaiki outline style di Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Hilangkan padding dalam di Chrome dan Safari di macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Perbaiki kegagalan style di clickable type (tipe yang dapat diklik) di iOS dan Safari.
+ * 2. Ubah properti fon menjadi `inherit` di Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interaktif
+   ========================================================================== */
+
+/*
+ * Tambahkan tampilan yang sesuai di Edge, IE 10+, dan Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Tambahkan tampilan yang sesuai di semua peramban.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Ragam
+   ========================================================================== */
+
+/**
+ * Tambahkan tampilan yang sesuai di IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Tambahkan tampilan yang sesuai di IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
